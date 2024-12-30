@@ -1,3 +1,4 @@
+import { auth} from '../lib/firebase';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { 
   User as FirebaseUser,
@@ -6,7 +7,7 @@ import {
   createUserWithEmailAndPassword,
   signOut
 } from 'firebase/auth';
-import { auth } from '../lib/firebase';
+
 
 interface AuthContextType {
   user: FirebaseUser | null;
